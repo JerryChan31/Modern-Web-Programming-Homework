@@ -1,0 +1,136 @@
+body {
+    background-image: url(http://my.ss.sysu.edu.cn/wiki/download/attachments/7045968/background.png?version=1&modificationDate=1268896312000);
+    font-family:  Verdana, Tahoma, sans-serif;
+    font-size: 8pt;
+    margin: 0;
+    padding: 0;
+}
+
+div.banner {
+    text-align: center;
+    background-image: url(http://my.ss.sysu.edu.cn/wiki/download/attachments/7045968/bannerbackground.png?version=1&modificationDate=1268896312000);
+    background-repeat: repeat-x;
+}
+
+#title {
+    font-family: Tahoma, Verdana, serif;
+    text-align: center;
+    font-size: 24pt;
+    font-weight: bold;
+}
+
+div.overallcontent {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    border-color: gray;
+    border-style: solid;
+}
+
+div.rottentitle {
+    width: 550px;
+    background-image: url(http://my.ss.sysu.edu.cn/wiki/download/attachments/7045968/rottenbackground.png?version=1&modificationDate=1268896385000);
+    background-size: 10px, 83px;
+    background-repeat: repeat-x;
+    float: left;
+}
+
+span.score {
+    font-size: 48pt;
+    font-weight: bold;
+    color: red;
+    display: inline;
+    vertical-align: 15%;
+}
+
+span.reviewNums {
+    display: inline;
+    color: white;
+    vertical-align: 80%;
+}
+
+div.poster{
+    float: right;
+    width: 250px;
+    height: 100%;
+    background-color: #A2B964;
+    font-family: Arial, sans-serif;
+}
+
+#information {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0;
+}
+
+#information > dd {
+    padding-bottom: 1em;
+}
+
+span.strengthen {
+    font-weight: bold;
+}
+
+div.comment {
+    float: left;
+    width: 92%;
+    background-color: #E1D697;
+    border-style: solid;
+    border-color: gray;
+    border-width: 3px;
+    padding: 8px;
+    font-weight: bold;
+}
+
+div.comment > p {
+    margin: 0;
+}
+
+div.commentor > p {
+    margin-bottom: 0;
+}
+
+div.commentor {
+    clear: left;
+    padding-top: 1px;
+    padding-bottom: 3em;
+}
+
+img.commentpic {
+    float: left;
+    vertical-align: text-top;
+    padding-right: 5px;
+}
+
+div.column {
+    float: left;
+    width: 47%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+div.validator {
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+}
+
+#page {
+    text-align: center;
+    clear: both;
+    background-color: #A2B964;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+span.publication {
+    font-style: italic;
+}
+
+div.columnarea {
+    float: left;
+    margin: 0;
+    width: 550px;
+}

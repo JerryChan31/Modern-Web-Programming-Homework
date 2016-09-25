@@ -1,0 +1,58 @@
+body {
+    font-family: Georgia, Garamond, serif;
+    font-size: 14pt;
+    color: #404040;
+    text-align: center;
+}
+
+img {
+    border: 0;
+}
+
+h1, h2 {
+    background-color: #F0F0F0;
+    font-family: "Century Gothic", "Futura", Verdana, serif;
+    letter-spacing: 0.05em;
+}
+
+h1 {
+    color: black;
+    font-size: 22pt;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+
+h2.natural {
+    color: #A4A400;   
+}
+
+h2.spicy {
+    color: red;
+}
+
+h2.sweet {
+    color: pink;
+}
+
+strong {
+    font-weight: bold;
+}
+
+a {
+    color: #4A4A4A;
+}
+
+p.ending {
+    font-style: italic;
+}
+
+div.pre {
+    background-image: url(../pic/bkg.jpg);
+}
+
+div.pic {
+    background-image: url(../pic/bkg.jpg);
+}
