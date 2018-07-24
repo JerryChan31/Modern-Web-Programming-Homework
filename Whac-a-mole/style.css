@@ -1,0 +1,106 @@
+body {
+    font-family : "Century Gothic", sans-serif;
+    font-size : 15pt;
+}
+
+@font-face {
+    font-family: selfdefine;
+    src: url(./Tiza.ttf);
+}
+
+h1 {
+    font-family: selfdefine, "Century Gothic", sans-serif;
+    font-size : 23pt;
+    font-weight : normal;
+
+    margin : 0;
+
+    text-align : center;
+}
+
+#game-container {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mainIntro {
+    font-size: 14pt;
+    text-align: center;
+}
+
+#playAreaBackground {
+    margin-top: 30px;
+    width: 410px;
+    height: 275px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #cecece;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 3px 3px 3px 0px;
+}
+
+#playArea {
+    width: 380px;
+    height: 276px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 10px;
+}
+
+#infobar {
+    width: 320px;
+    height: 51px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#startButton {
+    width: 150px;
+    height: 20px;
+    font-size: 8pt;
+    margin-right: 50px;
+    background-color: white;
+    border-radius: 7px;
+}
+
+#timer {
+    display: inline;
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    border-radius: 7px;
+}
+
+#scorer {
+    display: inline;
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.infoText {
+    font-family : "Century Gothic", sans-serif;
+    display: inline;
+}
+
+#statusbar {
+    margin-right: 40px;
+    width: 150px;
+    height: 20px;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.radio {
+    width: 30px;
+    height: 30px;
+    margin-top: 11px;
+    
+}
+
+input {
+    background-color: white;
+}

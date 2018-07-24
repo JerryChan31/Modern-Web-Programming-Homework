@@ -1,0 +1,279 @@
+body {
+    font-family : 'Century Gothic', sans-serif;
+    font-size : 14pt;
+
+    margin : 0;
+
+    cursor : url(../res/hand.cur), pointer !important;
+}
+
+h1 {
+    font-size : 50pt;
+    font-weight : normal;
+
+    display : inline-block;
+
+    width : 800px;
+    margin-right : auto;
+    margin-left : auto;
+
+    text-align : center;
+}
+
+@keyframes scaling {
+    0% {
+        transform : scale(1);
+    }
+    50% {
+        transform : scale(.001);
+    }
+    100% {
+        transform : scale(1);
+    }
+}
+
+@keyframes smalling {
+    0% {
+        transform : scale(1);
+    }
+    100% {
+        transform : scale(.11);
+    }
+}
+
+#game-with-caption {
+    width : 1400px;
+    margin-top : 150px;
+    margin-right : auto;
+    margin-left : auto;
+}
+
+@keyframes bigging {
+    0% {
+        transform : scale(.001);
+    }
+    100% {
+        transform : scale(1);
+    }
+}
+
+#game-container {
+    display : inline-block;
+    float : left;
+
+    width : 588px;
+    height : 588px;
+    margin-right : auto;
+    margin-left : auto;
+    padding-top : 70px;
+
+    border-radius : 35px;
+    background : linear-gradient(to bottom, rgba(246,248,249,1) 0%,rgba(229,235,238,1) 50%,rgba(215,222,227,1) 51%,rgba(245,247,249,1) 100%);
+    box-shadow : 5px 5px 5px 5px gray;
+}
+
+#puzzle-box {
+    font-size : 0;
+
+    width : 488px;
+    height : 488px;
+    margin-top : 0;
+    margin-right : auto;
+    margin-left : auto;
+}
+
+.puzzle-frame {
+    display : inline-block;
+
+    width : 120px;
+    height : 120px;
+
+    border : 1px solid;
+    border-color : gray;
+    background-size : 488px 488px;
+}
+
+.pic1 {
+    background-image : url(../res/easy.jpg);
+}
+
+.pic2 {
+    background-image : url(../res/hard.jpg);
+}
+
+.pic3 {
+    background-image: url(../res/hell.jpg);
+}
+
+.puzzle-frame:hover {
+    transition : all .25s;
+    transform : scale(1.05);
+}
+
+.puzzle-frame:active {
+    cursor : url(../res/down.cur), default;
+}
+
+
+.scaling {
+    animation : scaling1 .25s;
+}
+
+.smalling {
+    animation : smalling .25s;
+}
+
+.bigging {
+    animation : bigging .25s;
+}
+
+#pzz0 {
+    background-position : 0 0;
+}
+
+#pzz1 {
+    background-position : 33.33% 0;
+}
+
+#pzz2 {
+    background-position : 66.66% 0;
+}
+
+#pzz3 {
+    background-position : 100% 0;
+}
+
+#pzz4 {
+    background-position : 0 33.33%;
+}
+
+#pzz5 {
+    background-position : 33.33% 33.33%;
+}
+
+#pzz6 {
+    background-position : 66.66% 33.33%;
+}
+
+#pzz7 {
+    background-position : 100% 33.33%;
+}
+
+#pzz8 {
+    background-position : 0 66.66%;
+}
+
+#pzz9 {
+    background-position : 33.33% 66.66%;
+}
+
+#pzz10 {
+    background-position : 66.66% 66.66%;
+}
+
+#pzz11 {
+    background-position : 100% 66.66%;
+}
+
+#pzz12 {
+    background-position : 0 100%;
+}
+
+#pzz13 {
+    background-position : 33.33% 100%;
+}
+
+#pzz14 {
+    background-position : 66.66% 100%;
+}
+
+#pzz15 {
+    transform : none;
+
+    background-image : none;
+}
+
+#button-area {
+    position : relative;
+    top : -60px;
+    left: 285px;
+
+    width : 200px;
+}
+
+#stepCounter {
+    font-size : 40pt;
+
+    width : 200px;
+
+    text-align : center;
+
+    border : 0;
+    background-color : transparent;
+}
+
+#step-count-module {
+    position : relative;
+
+    width : 200px;
+    height : 190px;
+    margin-left : 170px;
+    padding-top : 10px;
+}
+
+.origin-pic {
+    position : relative;
+    top : -200px;
+    left : 410px;
+
+    width : 200px;
+    height : 200px;
+
+    background-size : 200px 200px;
+}
+
+.button {
+    font-family : 'Century Gothic', sans-serif;
+
+    width : 80px;
+    height : 40px;
+    margin-left : 13px;
+
+    cursor : url(../res/hand.cur), pointer;
+    text-align : center;
+
+    color : white;
+    border-width : 1px;
+    border-radius : 5px;
+    outline : none;
+    background : linear-gradient(to bottom, #7abcff 0%,#60abf8 44%,#4096ee 100%);
+    box-shadow : 1px 1px 1px 1px;
+}
+
+.button:active {
+    cursor : url(../res/down.cur), pointer;
+}
+
+#stepCounter-caption {
+    font-size : 20pt;
+
+    text-align : center;
+}
+
+#caption {
+    float : right;
+}
+
+#difficulty-button {
+    position : relative;
+    top : -120px;
+    left : 180px;
+}
+
+.difficulty {
+    background : linear-gradient(to bottom, rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%);
+}
+
+.difficulty-caption {
+    display : inline;
+}

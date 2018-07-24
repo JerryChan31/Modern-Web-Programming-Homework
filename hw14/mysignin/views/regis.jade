@@ -1,0 +1,40 @@
+doctype html
+html
+  head
+    title Sign in!
+    link(rel='stylesheet'  href='/stylesheets/index.css')
+    script(type='text/javascript' src='/javascripts/jQuery.js')
+    script(type='text/javascript' src='/javascripts/validator.js')
+    script(type='text/javascript' src='/javascripts/Registclient.js')
+  body
+    h1 signin
+    if existedError
+      span.serverError #{existedError} have already existed!
+    form(method = 'post' action = 'post-regist')#signin
+      div.username
+        span 用户名
+        input(name = 'username' value = newUser.username)#username
+        span.error
+      div.uid
+        span 学号
+        input(name = 'uid' value = newUser.uid)#uid
+        span.error
+      div.password
+        span 密码
+        input(type = 'password', name = 'password')#password
+        span.error
+      div.confirmPassword
+        span 确认密码
+        input(type = 'password' name = 'confirmPassword')#confirmPassword
+        span.error
+      div.phone
+        span 电话
+        input(name = 'phone' value = newUser.phone)#phone
+        span.error
+      div.email
+        span 邮箱
+        input(name = 'email' value = newUser.email)#email
+        span.error
+      div.button
+        input(type = 'reset')#reset
+        input(type = 'submit')#submit

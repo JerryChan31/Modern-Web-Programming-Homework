@@ -1,0 +1,267 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+} 
+
+/*set position to bottom*/
+#bottom-positioner {
+    margin-top: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 500px;
+}
+
+/*div to trigger the hover*/
+#button {
+    position: relative;
+    top: 170px;
+    width: 35px;
+    height: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: left 1s;
+    transition-delay: 2s;
+}
+
+/*small @+ logo*/
+#button:before {
+    display: block;
+    content: url(assets/images/atplus_white.png);
+    background-color: #999dcb;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 42px;
+    position: relative;
+    top: 10px;
+}       
+
+/* style of info bar */
+#info-bar {
+    position: relative;
+    left: -47.5px;
+    top:-102.5px;
+    z-index: 0;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    background-color: #1d48a6;
+    transform:scale(0.2);
+}
+
+/*transition of button when hover*/
+#button:hover {
+    position: relative;
+    top: 0px;
+    left: -20px;
+    padding-top: 170px;
+    padding-left: 100px;
+    padding-right: 60px;
+    padding-bottom: 120px;
+    transition-delay: 0s;
+}
+
+/*transition of infobar when hover*/
+#button:hover #info-bar {
+    transform:translateY(-120px);
+    transition-delay: 0s;
+}
+
+/*transition of apb when hover*/
+#button:hover .apb {
+    z-index: 2;
+    transform:scale(1.5);
+    transition-delay: 0s !important;
+    transition: transform 0.5s ease-out 1s;
+}
+
+/*transition of infobar, button, apb when hover out*/
+#button > div {
+    opacity: 0;
+    transition: opacity 0.5s ease-out, transform 0.5s, z-index 0.5s;
+    transition-delay: 1s;
+}
+
+/*transition of infobar, button, apb when hover*/
+#button:hover > div {
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+/*transition of button when hover out*/
+#button:hover   .button {
+    transition-delay: 0s;
+}
+
+/*transition of control ting when hover*/
+#button:hover .control-ring-container {
+    position: relative;
+    top: 0px;
+
+}
+
+/*style of infobar's ul*/
+.info > ul {
+    margin-top: 0;
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+/*user style*/
+.user {
+    text-align: center;
+    position: relative;
+    top: 8px;
+    color: white;
+}
+
+.user > span {
+    margin-left: 5px;
+    vertical-align: top;
+}
+
+/*comment style*/
+.comment {
+    margin-top: 8px;
+    text-align: center;
+    color: white;
+    font-size: 25pt;
+}
+
+.comment > img {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+
+/* style of buttons */
+.unread {
+    display: block;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    text-align: center;
+    background: red;
+    position: relative;
+    right: -25px;
+    top: -32px;
+    line-height: 15px !important;
+    font-size: 8pt;
+}
+
+#control-ring-container {
+    position: relative;
+    top: -165px;
+}
+
+#control-ring {
+    padding: 0;
+    height: 35px;
+}
+
+#control-ring {
+    margin: 0;
+    list-style: none;
+    position: relative;
+    top: -27px;
+}
+
+.button {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: bottom;
+    background: #1d48a6;
+    color: white; 
+    line-height: 32px;
+    transition-delay: 1s;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+/*apb style*/
+.apb {
+    position: relative;
+    z-index: 0;
+    top: -225.5px;
+    left: 0px;
+    width: 35px;
+    height: 35px;
+    opacity: 0;
+    transition: transform 0.5s ease-out;
+    transition-delay: 2s !important;
+    transition: opacity 2s ease-out 3s;
+}
+
+/*style of big @+ logo*/
+.apb:before {
+    display: block;
+    content: "";
+    background-image: url(assets/images/atplus_green.png);
+    background-color: rgba(48, 63, 159, 1);
+    background-size: 28px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 60px;
+    line-height: 110px;
+    text-align: center;
+}
+
+/*button movement*/
+#button:hover .mask {
+    transform:translate(-80px,-45px);
+}
+
+#button:hover .history {
+    transform:translate(-92px, 2px);
+}
+
+.history {
+    top: -35px;
+}
+
+#button:hover .message {
+    transform:translate(-79px, 47px);
+}
+
+.message {
+    top:-70px;
+}
+
+#button:hover .setting {
+    transform:translate(-43px, 80px);
+} 
+
+.setting {
+    top: -105px;
+}
+
+#button:hover .sign {
+    transform:translate(4px, 92px);
+}
+
+.sign {
+    top: -140px;
+}
+
+#sum {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 45px;
+    font-size: 26pt;
+}
+
+.disabled {
+    background-color: #696969 !important;
+}

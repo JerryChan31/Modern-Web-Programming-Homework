@@ -1,0 +1,50 @@
+body {
+    font-family: sans-serif;
+}
+
+table, td, th{
+    border: 1px gray solid;
+    border-collapse:collapse;
+}
+
+td, th {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+th {
+    text-align: left;
+    background-color: #021c7d;
+    color: white;
+    cursor: pointer;
+}
+
+th:after {
+    content: url("ascend.png");
+}
+
+.alternate {
+    background-color: #DDDDDD;
+}
+
+td {
+    margin: 0;
+}
+
+.upSorted {
+    background-color: #A4B0FC;
+}
+
+.upSorted:after {
+    content: url("ascend.png");
+    float: right;
+}
+
+.downSorted {
+    background-color: #A4B0FC;
+}
+
+.downSorted:after {
+    content: url("descend.png");
+    float: right;
+}

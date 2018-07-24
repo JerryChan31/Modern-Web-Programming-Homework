@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>fifteen puzzle!</title>
+        <meta charset=utf-8>
+        <meta name=description content="A puzzle you will love !">
+        <meta name=viewport content="width=device-width, initial-scale=1">
+        <script src="js/jscript.js"></script>
+        <script src="js/jQuery.js"></script>
+        <script src="js/lodash.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    </head>
+    <body unselectable="on" onselectstart="return false;">
+        <div id = "game-with-caption">
+            <div id ="game-container">
+                <div id = "puzzle-box">
+                    <!-- auto generate puzzle here-->
+                </div>
+            </div>
+            <div id = "caption">
+                <h1>Fifteen Puzzle!</h1>
+                <div id = "step-count-module">
+                    <p id = "stepCounter-caption">Current Steps</p>
+                    <input type="text" value = 0 id = "stepCounter" disabled="true">
+                </div>
+                <div class = "origin-pic pic1"></div>
+                <div id = "difficulty-button">
+                    <p class = "difficulty-caption">DIFFICULITY</p>
+                    <input type="button" class="difficulty button" id = "easy" value="Easy">
+                    <input type="button" class="difficulty button" id = "hard" value="Hard">
+                    <input type="button" class="difficulty button" id = "hell" value="Hell">
+                </div>
+                <div id = "button-area">
+                    <!-- start button here -->
+                    <input type="button" value="Start!" id = "start-button" class = "game-control button">
+                    <input type="button" value="End Game" id = "end-button" class = "game-control button">
+                </div>
+                <div id = "review-button"></div>
+            </div>
+        </div>
+    </body>
+</html>

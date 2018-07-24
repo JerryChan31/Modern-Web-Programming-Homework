@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title Detail
+    link(rel='stylesheet', href='/stylesheets/detail.css')
+    script(type='text/javascript' src='/javascripts/jQuery.js')
+    script(type='text/javascript' src='/javascripts/detail.js')
+  body
+    div.frame
+      h1 Detail
+      if illegalAccess == true
+        span.error 只能访问自己的页面！
+      div.username
+        span.hint 用户名: 
+        span.content #{user.username}
+      div.uid
+        span.hint 学号:
+        span.content #{user.uid}
+      div.phone
+        span.hint 电话:
+        span.content #{user.phone}
+      div.email
+        span.hint 邮箱:
+        span.content #{user.email}
+      input#logout(type = 'button' value = "退出")

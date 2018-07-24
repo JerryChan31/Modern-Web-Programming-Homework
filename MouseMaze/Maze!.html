@@ -1,0 +1,37 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Maze!</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="jscript.js"></script>
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    </head>
+    <body>
+        <div id = "game-container">
+            <h1>The Amazing Mouse Maze!</h1>
+            <p class = "start">Move your mouse over the "S" to begin.</p>
+            <div id = "hint">
+                <p class="hint-text"></p>
+            </div>
+            <div id = "playArea">
+                <div class = "box1 wall"></div>
+                <div class = "box2 wall"></div>
+                <div class = "box3 wall"></div>
+                <div id = "start">S</div>
+                <div id = "end">E</div>
+                <div class = "box4 wall"></div>
+                <div class = "box5 wall"></div>
+                <div id = "cheatJudgeBox"></div>
+                <div id = "cover"></div>
+            </div>
+            <div class = "intro">
+                <p>The object of this game is to guide the mouse cursor through the start area and get to the end area.Be sure to avoid the walls:</p>
+                <div class = "intro-wall">
+                    
+                </div>
+                <p>Good luck!</p>
+            </div>
+        </div>
+    </body>
+</html>

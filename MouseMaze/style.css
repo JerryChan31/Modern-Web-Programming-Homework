@@ -1,0 +1,217 @@
+body {
+    font-family : 'Century Gothic', sans-serif;
+    font-size : 15pt;
+}
+
+@font-face {
+    font-family : selfdefine;
+
+    src : url('./Tiza.ttf');
+}
+
+h1 {
+    font-family: selfdefine, "Century Gothic", sans-serif;
+    font-size : 30pt;
+    font-weight : normal;
+
+    margin : 0;
+
+    text-align : center;
+}
+
+.start {
+    font-size : 22pt;
+
+    margin : 10px;
+
+    text-align : center;
+}
+
+#hint {
+    width : 900px;
+    height : 30px;
+
+    transition : all .5s;
+}
+
+.hint-text {
+    font-size : 14pt;
+    line-height : 0;
+    opacity: 0;
+    text-align : center;
+    transition: all 1s;
+}
+
+.hint-text1 {
+    font-size : 14pt;
+    line-height : 0;
+
+    text-align : center;
+    opacity: 1;
+    transition: all 1s;
+}
+
+
+#game-container {
+    width : 900px;
+    margin-right : auto;
+    margin-left : auto;
+}
+
+.intro {
+    width : 580px;
+    margin-right : auto;
+    margin-left : auto;
+}
+
+#playArea {
+    width : 500px;
+    height : 300px;
+    margin-right : auto;
+    margin-left : auto;
+}
+
+.wall {
+    position : relative;
+
+    background-color : #cecece;
+}
+
+.wallchanged {
+    position : relative;
+
+    transition : all .2s;
+
+    background-color : #e80002;
+}
+
+.box1 {
+    width : 150px;
+    height : 200px;
+
+    border-radius : 7px 0 7px 7px;
+}
+
+.box2 {
+    z-index : 1;
+    top : -200px;
+    left : 150px;
+
+    width : 202px;
+    height : 50px;
+}
+
+.box3 {
+    top : -250px;
+    left : 350px;
+
+    width : 150px;
+    height : 200px;
+
+    border-radius : 0 7px 7px 7px;
+}
+
+#start {
+    color: white;
+    font-family : selfdefine, sans-serif;
+    line-height : 35px;
+
+    position : relative;
+    z-index : 1;
+    top : -249px;
+
+    width : 40px;
+    height : 40px;
+
+    text-align : center;
+
+    border-radius : 50%;
+    background-color : #c6c6c6;
+    box-shadow : 0 0 1px 1px #7c7c7c;;
+}
+
+#start:hover {
+    box-shadow : 0 0 3px 5px #7c7c7c;
+}
+
+#end {
+    color: white;
+    font-family : selfdefine, sans-serif;
+    line-height : 35px;
+
+    position : relative;
+    z-index : 1;
+    top : -291px;
+    left : 460px;
+
+    width : 40px;
+    height : 40px;
+
+    text-align : center;
+
+    border-color : #7c7c7c;
+    border-radius : 50%;
+    background-color : #c6c6c6;
+    box-shadow : 0 0 1px 1px #7c7c7c;
+}
+
+#end:hover {
+    box-shadow : 0 0 3px 5px #7c7c7c;
+}
+
+.box4 {
+    top : -439px;
+    left : 200px;
+
+    width : 100px;
+    height : 150px;
+
+    border-bottom : none;
+    border-radius : 7px 7px 0 0;
+}
+
+.box5 {
+    top : -439px;
+
+    width : 500px;
+    height : 50px;
+
+    border-radius : 7px 7px 7px 7px;
+}
+
+#cheatJudgeBox {
+    position : relative;
+    top : -540px;
+    left : 500px;
+
+    width : 2px;
+    height : 60px;
+
+    opacity : 0;
+    background-color : blue;
+}
+
+#cover {
+    position : relative;
+    z-index : -1;
+    top : -784px;
+
+    width : 500px;
+    height : 300px;
+
+    opacity : 0;
+    border : 1px solid;
+    border-color : black;
+}
+
+.intro-wall {
+    position : relative;
+
+    width : 100px;
+    height : 25px;
+    margin-right : auto;
+    margin-left : auto;
+
+    border-radius : 7px 7px 7px 7px;
+    background-color : #cecece;
+}

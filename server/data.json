@@ -1,0 +1,26 @@
+[
+  {
+    "username": "a99999991122",
+    "identity": "12345699",
+    "phoneNum": "22222222222",
+    "email": "3@q.com"
+  },
+  {
+    "username": "a123456",
+    "identity": "12345678",
+    "phoneNum": "12345678901",
+    "email": "1@q.com"
+  },
+  {
+    "username": "a123654",
+    "identity": "87654321",
+    "phoneNum": "10987654321",
+    "email": "21@qq.com"
+  },
+  {
+    "username": "ada123",
+    "identity": "13245678",
+    "phoneNum": "11234567890",
+    "email": "111@qq.com"
+  }
+]

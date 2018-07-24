@@ -1,0 +1,90 @@
+body {
+    font-family : sans-serif;
+    font-size : 16pt;
+}
+
+/*local font setting*/
+@font-face {
+    font-family : self-font;
+
+    src : url('font.ttf');
+}
+
+@font-face {
+    font-family: outputfont;
+    src:url('outputfont.ttf');
+}
+
+h1 {
+    font-family : self-font, sans-serif;
+
+    text-align : center;
+
+    color : #60605f;
+}
+
+.monitor {
+    padding-bottom : 30px;
+}
+
+#output {
+    font-family : outputfont, sans-serif;
+    font-size : 40pt;
+
+    display : block;
+
+    width : 580px;
+    height : 90px;
+    margin-right : auto;
+    margin-left : auto;
+    padding-right : 10px;
+    padding-left : 10px;
+
+    text-align : center;
+    text-align : right;
+
+    border-radius : 10px;
+    background-color : #518e6e;
+}
+
+
+#calculator {
+    width : 700px;
+    margin-top : 30px;
+    margin-right : auto;
+    margin-left : auto;
+    padding-top : 10px;
+    padding-bottom : 40px;
+
+    border : solid;
+    border-radius : 30px;
+    background-color : #d1d1d1;
+    box-shadow : 10px 10px 20px 10px #000;
+}
+
+.CalArea {
+    width : 632px;
+    margin-top : 20px;
+    margin-right : auto;
+    margin-left : auto;
+}
+
+/*the effect when clicking*/
+.CalArea input:active {
+    color : black;
+    background : linear-gradient(to bottom, gray, #3a76c4);
+}
+
+.CalArea input {
+    font-family : self-font, sans-serif;
+    font-size : 35pt;
+
+    width : 150px;
+    height : 100px;
+    margin-top : 10px;
+    padding : 0;
+
+    color : white;
+    border-radius : 25px;
+    background : linear-gradient(to bottom, #3a76c4, gray);
+}
